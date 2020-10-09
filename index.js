@@ -16,7 +16,7 @@ client.connect(config.DB, { useNewUrlParser: true }, (err, db) => {
 });
 
 app.get('/', (req, res) => {
-    res.json("I love docker!");
+    res.json("A la grande le puse Cuca!");
 });
 
 app.listen(PORT, () => {
