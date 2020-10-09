@@ -7,7 +7,7 @@ script:
     - docker images efisito/node
 
 before_deploy:
-    - docker login -u "efisito" -p "P13rr3_@ar0nn4x"
+    - docker login -u "efisito" -p "P13rr3_@r0nn4x"
 
 deploy:
     provider: script
