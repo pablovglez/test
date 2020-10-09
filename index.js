@@ -1,7 +1,7 @@
 import express from 'express';
 import mongodb from 'mongodb';
 import config from './data';
-//
+
 const app = express();
 const PORT = 4000;
 const client = mongodb.MongoClient;
