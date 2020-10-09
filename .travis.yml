@@ -5,3 +5,12 @@ services:
 script:
     - docker build -t efisito/node . 
     - docker images efisito/node
+
+before_deploy:
+    - docker login -u efisito -p P13rr3_@ar0nn4x
+
+deploy:
+    provider: script
+    script: docker push efisito/node
+    on:
+        branch: master
